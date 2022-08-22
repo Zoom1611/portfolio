@@ -4,10 +4,17 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import jsPDF from "jspdf";
+import resume from "../assets/Resume.pdf";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleClick = () => setNav(!nav);
+
+	const pdfGenerate = () => {
+		const doc = new jsPDF("landscape", "px", "a4", false);
+		doc.save({ resume });
+	};
 
 	return (
 		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -18,27 +25,52 @@ const Navbar = () => {
 			{/* Menu */}
 			<ul className="hidden md:flex">
 				<li>
-					<Link to="home" smooth={true} duration={500}>
+					<Link
+						to="home"
+						smooth={true}
+						duration={500}
+						className="hover:border-b-4 hover:border-pink-600"
+					>
 						Home
 					</Link>
 				</li>
 				<li>
-					<Link to="about" smooth={true} duration={500}>
+					<Link
+						to="about"
+						smooth={true}
+						duration={500}
+						className="hover:border-b-4 hover:border-pink-600"
+					>
 						About
 					</Link>
 				</li>
 				<li>
-					<Link to="skills" smooth={true} duration={500}>
+					<Link
+						to="skills"
+						smooth={true}
+						duration={500}
+						className="hover:border-b-4 hover:border-pink-600"
+					>
 						Skills
 					</Link>
 				</li>
 				<li>
-					<Link to="work" smooth={true} duration={500}>
+					<Link
+						to="work"
+						smooth={true}
+						duration={500}
+						className="hover:border-b-4 hover:border-pink-600"
+					>
 						Work
 					</Link>
 				</li>
 				<li>
-					<Link to="contact" smooth={true} duration={500}>
+					<Link
+						to="contact"
+						smooth={true}
+						duration={500}
+						className="hover:border-b-4 hover:border-pink-600"
+					>
 						Contact
 					</Link>
 				</li>
@@ -98,7 +130,7 @@ const Navbar = () => {
 					<li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
 						<a
 							className="flex justify-between items-center w-full text-gray-300"
-							href="https://www.linkedin.com/in/ivan-razum-756376233/"
+							href="https://github.com/Zoom1611"
 						>
 							GitHub <FaGithub size={30} />
 						</a>
@@ -106,18 +138,18 @@ const Navbar = () => {
 					<li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
 						<a
 							className="flex justify-between items-center w-full text-gray-300"
-							href="https://www.linkedin.com/in/ivan-razum-756376233/"
+							href="mailto: ivanrazum1611@gmail.com"
 						>
 							Email <HiOutlineMail size={30} />
 						</a>
 					</li>
 					<li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-						<a
+						<button
 							className="flex justify-between items-center w-full text-gray-300"
-							href="https://www.linkedin.com/in/ivan-razum-756376233/"
+							onClick={pdfGenerate}
 						>
 							Resume <BsFillPersonLinesFill size={30} />
-						</a>
+						</button>
 					</li>
 				</ul>
 			</div>

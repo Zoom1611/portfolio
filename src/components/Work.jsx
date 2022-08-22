@@ -1,6 +1,10 @@
 import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
+import corona from "../assets/corona.jpg";
+import notes from "../assets/notes.png";
+import chat from "../assets/chat.jpg";
+import calculator from "../assets/calculator.png";
+import weather from "../assets/weather.jpg";
+import rockPaperScissors from "../assets/rockPaperScissors.png";
 
 const Work = () => {
 	return (
@@ -17,21 +21,21 @@ const Work = () => {
 				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
 					{/*Grid Item*/}
 					<div
-						style={{ backgroundImage: `url(${WorkImg})` }}
+						style={{ backgroundImage: `url(${corona})` }}
 						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
 					>
 						{/* Hover Effect */}
-						<div className="opacity-0 group-hover:opacity-100">
-							<span className="text-2xl font-bold text-white tracking-wider">
-								React JS Application
+						<div className="opacity-0 group-hover:opacity-100 text-center">
+							<span className="text-2xl font-bold text-white tracking-wider ">
+								Covid
 							</span>
 							<div className="pt-8 text-center">
-								<a href="/">
+								<a href="https://zoom-covid19.netlify.app/">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Demo
 									</button>
 								</a>
-								<a href="/">
+								<a href="https://github.com/Zoom1611/covid19">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Code
 									</button>
@@ -41,21 +45,21 @@ const Work = () => {
 					</div>
 
 					<div
-						style={{ backgroundImage: `url(${realEstate})` }}
+						style={{ backgroundImage: `url(${notes})` }}
 						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
 					>
 						{/* Hover Effect */}
-						<div className="opacity-0 group-hover:opacity-100">
+						<div className="opacity-0 group-hover:opacity-100 text-center">
 							<span className="text-2xl font-bold text-white tracking-wider">
-								React JS Application
+								Notes
 							</span>
 							<div className="pt-8 text-center">
-								<a href="/">
+								<a href="https://zoom-notify.netlify.app/">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Demo
 									</button>
 								</a>
-								<a href="/">
+								<a href="https://github.com/Zoom1611/notify">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Code
 									</button>
@@ -64,68 +68,21 @@ const Work = () => {
 						</div>
 					</div>
 					<div
-						style={{ backgroundImage: `url(${WorkImg})` }}
+						style={{ backgroundImage: `url(${chat})` }}
 						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
 					>
 						{/* Hover Effect */}
-						<div className="opacity-0 group-hover:opacity-100">
+						<div className="opacity-0 group-hover:opacity-100 text-center">
 							<span className="text-2xl font-bold text-white tracking-wider">
-								React JS Application
+								Chat
 							</span>
 							<div className="pt-8 text-center">
-								<a href="/">
+								<a href="https://zoom-chat-app.netlify.app/">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Demo
 									</button>
 								</a>
-								<a href="/">
-									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div
-						style={{ backgroundImage: `url(${realEstate})` }}
-						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-					>
-						{/* Hover Effect */}
-						<div className="opacity-0 group-hover:opacity-100">
-							<span className="text-2xl font-bold text-white tracking-wider">
-								React JS Application
-							</span>
-							<div className="pt-8 text-center">
-								<a href="/">
-									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-										Demo
-									</button>
-								</a>
-								<a href="/">
-									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${WorkImg})` }}
-						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-					>
-						{/* Hover Effect */}
-						<div className="opacity-0 group-hover:opacity-100">
-							<span className="text-2xl font-bold text-white tracking-wider">
-								React JS Application
-							</span>
-							<div className="pt-8 text-center">
-								<a href="/">
-									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-										Demo
-									</button>
-								</a>
-								<a href="/">
+								<a href="https://github.com/Zoom1611/seminarski-rad-chat-app">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Code
 									</button>
@@ -135,21 +92,68 @@ const Work = () => {
 					</div>
 
 					<div
-						style={{ backgroundImage: `url(${realEstate})` }}
+						style={{ backgroundImage: `url(${weather})` }}
 						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
 					>
 						{/* Hover Effect */}
-						<div className="opacity-0 group-hover:opacity-100">
+						<div className="opacity-0 group-hover:opacity-100 text-center">
 							<span className="text-2xl font-bold text-white tracking-wider">
-								React JS Application
+								Weather
 							</span>
 							<div className="pt-8 text-center">
-								<a href="/">
+								<a href="https://zoom-weather.netlify.app/">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Demo
 									</button>
 								</a>
-								<a href="/">
+								<a href="https://github.com/Zoom1611/weather">
+									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+										Code
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div
+						style={{ backgroundImage: `url(${calculator})` }}
+						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+					>
+						{/* Hover Effect */}
+						<div className="opacity-0 group-hover:opacity-100 text-center">
+							<span className="text-2xl font-bold text-white tracking-wider">
+								Calculator
+							</span>
+							<div className="pt-8 text-center">
+								<a href="https://zoom-calculator.netlify.app/">
+									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+										Demo
+									</button>
+								</a>
+								<a href="https://github.com/Zoom1611/calculator">
+									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+										Code
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div
+						style={{ backgroundImage: `url(${rockPaperScissors})` }}
+						className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+					>
+						{/* Hover Effect */}
+						<div className="opacity-0 group-hover:opacity-100 text-center">
+							<span className="text-2xl font-bold text-white tracking-wider">
+								Rock Paper Scissors
+							</span>
+							<div className="pt-8 text-center">
+								<a href="https://zoom1611-rock-paper-scissors.netlify.app/">
+									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+										Demo
+									</button>
+								</a>
+								<a href="https://github.com/Zoom1611/rock-paper-scissors">
 									<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 										Code
 									</button>

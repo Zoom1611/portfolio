@@ -18,10 +18,15 @@ const About = () => {
 					</div>
 					<div>
 						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Molestiae, at. Eaque perferendis odio reiciendis, esse laudantium
-							animi eum quam ipsam vel hic. Assumenda tempore voluptatem neque
-							quibusdam laboriosam facere doloribus.
+							I gained basic knowledge in the field of Frontend development
+							(HTML, CSS, SCSS, JavaScript, GIT and React JS). I used various
+							other aids in creating application. Authoring applications of mine
+							are visible on my GitHub profile and in the Work section. I
+							successfully defended my dissertation in January 2022 at Open
+							University of Algebra. Also, I worked on my knowledge of ReactJS
+							through the course Modern React with Redux by lecturer Stephen
+							Grider via Udemy program. I have no experience in this field, but
+							I am willing to learn and make progress.
 						</p>
 					</div>
 				</div>

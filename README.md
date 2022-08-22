@@ -34,7 +34,7 @@ My official webpage.
 ## Application URL
 
 ```
-https://app.netlify.com/sites/zoom-portfolio/overview
+https://zoom-portfolio.netlify.app/
 ```
 
 #### Application creator: `Ivan Razum <ivanrazum1611@gmail.com>`

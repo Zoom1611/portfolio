@@ -3,20 +3,14 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import jsPDF from "jspdf";
 import resume from "../assets/Resume.pdf";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleClick = () => setNav(!nav);
 
-	const pdfGenerate = () => {
-		const doc = new jsPDF("landscape", "px", "a4", false);
-		doc.save({ resume });
-	};
-
 	return (
-		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#F5F5F5] text-gray-300">
+		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#F5F5F5] text-gray-300 z-0">
 			<div>
 				<b className="text-[#2C5FA2] text-2xl">IRazum</b>
 			</div>
@@ -143,12 +137,12 @@ const Navbar = () => {
 						</a>
 					</li>
 					<li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-						<button
+						<a
 							className="flex justify-between items-center w-full text-gray-300"
-							onClick={pdfGenerate}
+							href={resume}
 						>
 							Resume <BsFillPersonLinesFill size={30} />
-						</button>
+						</a>
 					</li>
 				</ul>
 			</div>

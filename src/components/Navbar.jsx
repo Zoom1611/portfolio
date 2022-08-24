@@ -10,7 +10,7 @@ const Navbar = () => {
 	const handleClick = () => setNav(!nav);
 
 	return (
-		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#F5F5F5] text-gray-300 z-0">
+		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#F5F5F5] text-gray-300">
 			<div>
 				<b className="text-[#2C5FA2] text-2xl">IRazum</b>
 			</div>
@@ -71,14 +71,18 @@ const Navbar = () => {
 
 			{/* Hambeurger */}
 			<div onClick={handleClick} className="md:hidden z-10">
-				{nav ? <FaTimes /> : <FaBars />}
+				{nav ? (
+					<FaTimes className="text-[#3C3C3C]" />
+				) : (
+					<FaBars className="text-[#3C3C3C]" />
+				)}
 			</div>
 
 			{/* Mobile Menu */}
 			<ul
 				className={
 					nav
-						? "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+						? "absolute top-0 left-0 w-full h-screen bg-[#F5F5F5] flex flex-col justify-center items-center text-[#3C3C3C]"
 						: "hidden"
 				}
 			>

@@ -16,9 +16,9 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+		<div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#F5F5F5] text-gray-300">
 			<div>
-				<b className="text-pink-600 text-2xl">IRazum</b>
+				<b className="text-[#2C5FA2] text-2xl">IRazum</b>
 			</div>
 
 			{/* Menu */}
@@ -28,7 +28,7 @@ const Navbar = () => {
 						to="home"
 						smooth={true}
 						duration={500}
-						className="hover:border-b-4 hover:border-pink-600"
+						className="text-[#3C3C3C] font-semibold text-lg hover:text-[#2C5FA2]"
 					>
 						Home
 					</Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
 						to="about"
 						smooth={true}
 						duration={500}
-						className="hover:border-b-4 hover:border-pink-600"
+						className="text-[#3C3C3C] font-semibold text-lg hover:text-[#2C5FA2]"
 					>
 						About
 					</Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
 						to="skills"
 						smooth={true}
 						duration={500}
-						className="hover:border-b-4 hover:border-pink-600"
+						className="text-[#3C3C3C] font-semibold text-lg hover:text-[#2C5FA2]"
 					>
 						Skills
 					</Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
 						to="work"
 						smooth={true}
 						duration={500}
-						className="hover:border-b-4 hover:border-pink-600"
+						className="text-[#3C3C3C] font-semibold text-lg hover:text-[#2C5FA2]"
 					>
 						Work
 					</Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
 						to="contact"
 						smooth={true}
 						duration={500}
-						className="hover:border-b-4 hover:border-pink-600"
+						className="text-[#3C3C3C] font-semibold text-lg hover:text-[#2C5FA2]"
 					>
 						Contact
 					</Link>

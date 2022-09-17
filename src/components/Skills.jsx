@@ -5,6 +5,7 @@ import GitHub from "../assets/github.svg";
 import Tailwind from "../assets/tailwind.png";
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
+import Vue from "../assets/vue.png"
 
 const Skills = () => {
 	return (
@@ -40,6 +41,10 @@ const Skills = () => {
 					<div className="hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
 						<p className="my-4 text-[#3C3C3C]">REACT</p>
+					</div>
+					<div className="hover:scale-110 duration-500">
+						<img className="w-20 mx-auto" src={Vue} alt="React Icon" />
+						<p className="my-4 text-[#3C3C3C]">VUE</p>
 					</div>
 					<div className="hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={GitHub} alt="GitHub Icon" />
